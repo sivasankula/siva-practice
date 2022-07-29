@@ -2,11 +2,15 @@
 import React,{Component} from "react";
 
 class User extends Component{
+    constructor(){
+        super()
+        this.state = {}
+    }
   
     render(){
         return(
             <div>
-                User - someUser age -22
+                User - {this.props.name} age -{this.props.age}
             </div>
         )
     }
