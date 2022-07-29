@@ -8,10 +8,13 @@ import React from "react";
 //     )
 // }
 
-const Welcome = () => {
+const Welcome = (props) => {
+    console.log(props)
     return(
         <div>
-            <h1>hi welcome</h1>
+            <h1>hi welcome {props.name}</h1>
+            <h2>hi my age{props.age}</h2>
+            {props.children}
         </div>
     )
 }
